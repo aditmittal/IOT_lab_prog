@@ -2,7 +2,7 @@
 SoftwareSerial mySerial(9,10);
 int count=0;
 char input[12];
-char check[12] = "0900970C8517";
+char check[12] = "5300292DD087";
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -23,14 +23,14 @@ void loop() {
     count=0;
     for(int i=0;i<12;i++){
       if(check[i]!=input[i]){
-        Serial.print("Access denied");
+        Serial.println("Access denied");
         flag=1;
         break;
         i++;
       }
     }
     if(flag==0){
-    Serial.print("Accepted");
+    Serial.println("Accepted");
     }
   }
   // put your main code here, to run repeatedly:
