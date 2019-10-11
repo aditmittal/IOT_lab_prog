@@ -27,7 +27,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   color();
   Serial.print("R Intensity: ");
-  Serial.print(red,DEC);
+  Serial.print(red,DEC);//to get output in decimal form
   Serial.print("G intensity: ");
   Serial.print(green,DEC);
   Serial.print("B intensity: ");
